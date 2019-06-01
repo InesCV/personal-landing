@@ -12,7 +12,7 @@ Here you can find all the relevant information about myself and some extra data 
 ### Git
 URls for the project: repository and deploy
 
-[Repository Link](https://github.com/InesCV/emergency-services)
+[Repository Link](https://github.com/InesCV/personal-landing)
 
-[Deploy Link](https://inescv.github.io/emergency-services/)
+[Deploy Link](https://inescv.github.io/personal-landing/)
 
