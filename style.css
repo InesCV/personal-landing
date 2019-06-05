@@ -99,7 +99,8 @@ p {
 
 span {
   /* color: #cad079; */
-  font-weight: 600;
+  font-weight: 800;
+  color: lightgray;
 }
 
 a {
@@ -133,8 +134,9 @@ u {
 }
 
 .header-bg {
-  background-color: #f50089;
-  background-image: url('./images/header-bg.png');
+  background-color: #231F20;
+  /* background-color: #f50089;
+  background-image: url('./images/header-bg.png'); */
   color: white;
   background-position: center; 
   background-size: cover;
