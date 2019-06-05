@@ -58,27 +58,36 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   padding: 0.4rem auto;
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2.3rem;
   font-weight: bold;
   padding: 0.3rem auto;
 }
 
 h3 {
-  font-size: 1.33rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+  line-height: 1.39;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5;
   padding: 0.25rem auto;
   line-height: 1.39;
+  text-decoration: underline;
 }
 
 h4 {
   font-size: 1.25rem;
   font-weight: bold;
   padding: 0.25rem auto;
+  text-decoration: underline;
 }
 
 h4 {
@@ -101,6 +110,10 @@ span {
   /* color: #cad079; */
   font-weight: 800;
   color: lightgray;
+}
+
+li > span {
+  color: #231F20;
 }
 
 a {
@@ -152,29 +165,21 @@ u {
   }
 }
 
+
 .header-des {
   max-width: 700px;
-  margin: 1rem 3rem;
+  margin: 1rem 2rem;
 }
 
-
-.danger-bg {
-  background-image: url('./images/fieldpicture-bg.png');
-  color: white;
-  background-position: center; 
-  background-size: cover;
-  background-blend-mode: screen;
-  /* width: 375px;
-  height: 812px; */
-  /* transform: rotate(-90deg); */
+.header-cta {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: auto 2rem;
 }
 
-.danger-title {
-  margin-bottom: 4rem;
-}
-
-.danger-preheight {
-  height: 3rem;
+.grey-bg {
+  background-color: #FBFBFA;
+  padding: 1rem;
 }
 
 .danger-list {
@@ -219,6 +224,14 @@ u {
 
 .full-height {
   height: 100vh;
+}
+
+.min-full-height {
+  min-height: 100vh;
+}
+
+.mid-height {
+  height: 50vh;
 }
 
 .cnt-pos {
