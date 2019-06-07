@@ -139,9 +139,10 @@ u {
 }
 
 .header-bg {
-  background-color: #231F20;
+  background-color: grey;
   /* background-color: #f50089;
   background-image: url('./images/header-bg.png'); */
+  background-image: url("https://media.giphy.com/media/OK5LK5zLFfdm/giphy.gif");
   color: white;
   background-position: center; 
   background-size: cover;
@@ -167,6 +168,33 @@ u {
   font-size: 1rem;
   padding: auto 2rem;
 }
+
+.scroll {
+  position: absolute;
+  top: calc(100vh - 100px);
+  left: calc(50% - 40px);
+  z-index: 100;
+  margin-bottom: 1rem;
+}
+
+.scroll > img {
+  width: 80px;
+  height: 80px;
+}
+
+@media (min-width: 600px) {
+  .scroll {
+    top: calc(100vh - 120px);
+    left: calc(50% - 50px);
+  }
+
+  .scroll > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
 
 .experience {
   display: flex;
