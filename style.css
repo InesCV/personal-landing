@@ -108,6 +108,14 @@ ul > li {
   padding-top: 0.25rem;
 }
 
+/* li > b {
+  color: #f50089;
+} */
+
+li > span {
+  color: #f50089;
+}
+
 a {
   /* color: $primary-color; */
 }
