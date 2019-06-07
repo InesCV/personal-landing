@@ -142,7 +142,8 @@ u {
   background-color: grey;
   /* background-color: #f50089;
   background-image: url('./images/header-bg.png'); */
-  background-image: url("https://media.giphy.com/media/OK5LK5zLFfdm/giphy.gif");
+  /* background-image: url("https://media.giphy.com/media/OK5LK5zLFfdm/giphy.gif"); */
+  background-image: url("https://media2.giphy.com/media/xT9IgN8YKRhByRBzMI/giphy.gif?cid=790b76115cfa6b4d57714a6959816463&rid=giphy.gif");
   color: white;
   background-position: center; 
   background-size: cover;
@@ -157,7 +158,6 @@ u {
     background-position: 25% 25%;
   }
 }
-
 
 .header-des {
   text-align: center;
@@ -194,8 +194,6 @@ u {
   }
 }
 
-
-
 .experience {
   display: flex;
   width: 100%;
@@ -210,6 +208,13 @@ u {
   width: 100%;
 }
 
+.softviolet-bg {
+  background-color: #FFF1F9;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 100%;
+}
+
 .experience > div {
   margin: 1rem;
 }
@@ -219,6 +224,54 @@ u {
     margin: 1rem 1.5rem;
     width: 37%;
   }
+}
+
+.knowledge {
+  width: 50vw;
+  background-color: #FBFBFA;
+}
+
+@media (max-width: 1000px) {
+  .knowledge {
+    width: 100vw;
+    padding: 2.5rem;
+  }
+}
+
+.ines-bg {
+  background-color: lightgray;
+  background-image: url('./images/header-bg.png');
+  background-position: center; 
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 50vw;
+  width: 50vw;
+  /* width: 375px;
+  height: 812px; */
+  /* transform: rotate(-90deg); */
+}
+
+@media (max-width: 1000px) {
+  .ines-bg {
+    display: none;
+  }
+}
+
+
+#knowledge-list {
+  width: 40vw;
+}
+
+#knowledge-list > li {
+  margin: 0.7rem;
+}
+
+#knowledge-list > li:hover {
+  color: #f50089;
+}
+
+.color-grey {
+  color: grey;
 }
 
 .danger-list {
