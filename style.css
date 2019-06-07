@@ -136,6 +136,11 @@ u {
 
 /* BY PARTS */
 
+footer {
+  padding-top: 2.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .container {
   margin: auto 30px;
 }
