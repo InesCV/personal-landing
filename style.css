@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 ol, ul {
   list-style: none;
@@ -49,7 +49,7 @@ table {
 
 * {
   font-family: "Raleway","Quicksand", "HelveticaNeue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1.1rem;
 }
 
 body {
@@ -72,7 +72,6 @@ h2 {
 h3 {
   font-size: 2rem;
   padding: 0.5rem;
-  line-height: 1.39;
   font-weight: bold;
   color: #231F20;
 }
@@ -80,7 +79,6 @@ h3 {
 h4 {
   font-size: 1.5;
   padding: 0.25rem auto;
-  line-height: 1.39;
   text-decoration: underline;
 }
 
@@ -98,14 +96,6 @@ span {
   /* color: #cad079; */
   font-weight: 800;
   color: lightgray;
-}
-
-li > span {
-  color: #231F20;
-}
-
-ul > li {
-  padding-top: 0.25rem;
 }
 
 /* li > b {
@@ -156,10 +146,11 @@ footer {
 
 .header-bg {
   background-color: grey;
-  /* background-color: #f50089;
-  background-image: url('./images/header-bg.png'); */
+  /* background-color: #f50089; */
+  background-image: url('./images/header-bg.png');
   /* background-image: url("https://media.giphy.com/media/OK5LK5zLFfdm/giphy.gif"); */
-  background-image: url("https://media2.giphy.com/media/xT9IgN8YKRhByRBzMI/giphy.gif?cid=790b76115cfa6b4d57714a6959816463&rid=giphy.gif");
+  /* background-image: url("https://media2.giphy.com/media/xT9IgN8YKRhByRBzMI/giphy.gif?cid=790b76115cfa6b4d57714a6959816463&rid=giphy.gif"); */
+  /* background-image: url("https://media2.giphy.com/media/l46CnhyOv6dAiGQYo/giphy.gif?cid=ecf05e47tocqy13duudz7rgsgaztc8bjl8zsht9z4yjpl54d&rid=giphy.gif&ct=g"); */
   color: white;
   background-position: center; 
   background-size: cover;
@@ -167,11 +158,15 @@ footer {
   /* width: 375px;
   height: 812px; */
   /* transform: rotate(-90deg); */
+  margin: 3rem;
+  height: calc(100vh - 6rem);
 }
 
 @media (min-width: 600px) {
   .header-bg {
     background-position: 25% 25%;
+    margin: 7rem;
+    height: calc(100vh - 14rem);
   }
 }
 
@@ -187,7 +182,7 @@ footer {
 
 .scroll {
   position: absolute;
-  top: calc(100vh - 100px);
+  top: calc(100vh - 10rem);
   left: calc(50% - 40px);
   z-index: 100;
   margin-bottom: 1rem;
@@ -200,7 +195,7 @@ footer {
 
 @media (min-width: 600px) {
   .scroll {
-    top: calc(100vh - 120px);
+    top: calc(100vh - 15rem);
     left: calc(50% - 50px);
   }
 
@@ -630,3 +625,190 @@ footer {
 .pr-6 {
   padding-right: calc(2rem);
 }
+
+/* CODING LINES WEBSITE */
+
+.code-structure {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.code-structure * {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.code-structure body {
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+.code-structure ul > li {
+  color: white;
+}
+
+.indent {
+  padding-left: 1rem;
+}
+
+@media (min-width: 600px) {
+  .code-structure ul > li {
+    color: white;
+  }
+  .indent {
+    padding-left: 2rem;
+  }
+}
+
+.code-structure h1 {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.code-structure br {
+  line-height: 1.5;
+}
+
+@media (min-width: 600px) {
+  .code-structure h1 {
+    font-size: 1.1rem;
+  }  
+}
+
+.code-structure h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.code-structure h3 {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: normal;
+  color: #231F20;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.code-structure h4 {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-decoration: underline;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.code-structure h5 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.code-structure p {
+  font-size: 1.1rem;
+  padding: none;
+  color: white;
+}
+
+.coding-lines p {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #030b17;
+  color: grey;
+  border-right: 1px solid black;
+  max-width: 50px;
+  text-align: right;
+}
+
+.coding-topics {
+  width: 100%;
+  background-color: #111926;
+  padding-left: 10px;
+}
+
+.coding-topics > p {
+  color: white;
+}
+
+/* // padding right */
+
+.comment {
+  color: #4FA954!important;
+}
+
+.green {
+  color: #A2EAA6!important;
+}
+
+.light-yellow {
+  color: #f5f49d!important;
+}
+
+.dark-yellow {
+  color: #ffe100!important;
+}
+
+.orange {
+  color: #e4b565!important;
+}
+
+.red {
+  color: #d07868!important;
+}
+
+.purple {
+  color: #ce84c2!important;
+}
+
+.pink {
+  color: #d93bbe!important;
+}
+
+.light-blue {
+  color: #65bedc!important;
+}
+
+.light-blue-no {
+  color: #65bedcaf!important;
+}
+
+.dark-blue {
+  color: #438ecc!important;
+}
+
+.output {
+  color: grey!important;
+}
+
+
+/* START typewriter effect */
+.typewriter {
+  display: flex;
+  justify-content: left;
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+/* END typewriter effect */
+
+
+html{scroll-behavior:smooth}
