@@ -21,13 +21,16 @@ time, mark, audio, video, button {
   vertical-align: baseline;
   text-decoration: none;
 }
+
+html{scroll-behavior:smooth}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
-  line-height: 1.5;
+  line-height: 24px;
 }
 ol, ul {
   list-style: none;
@@ -53,7 +56,6 @@ table {
 }
 
 body {
-  line-height: 1.5;
   font-size: 1.25rem;
 }
 
@@ -246,7 +248,7 @@ footer {
 #knowledge-list > li {
   border: 1px solid #f50089;
   border-radius: .25rem;
-  line-height: 1.5;
+  line-height: 24px;
   padding: 0.375rem 0.75rem;
   margin: 0.25rem;
   font-size: 1.1rem;
@@ -351,11 +353,18 @@ footer {
   text-align: center;
 }
 
+.left-cnt-pos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
 /* BUTTONS */
 
 .btn {
   /* border-radius: .25rem; */
-  line-height: 1.5;
+  line-height: 24px;
   padding: 1.2rem 2rem;
   font-size: 1.1rem;
   font-weight: bold;
@@ -626,6 +635,58 @@ footer {
   padding-right: calc(2rem);
 }
 
+/* HEADER CSS */
+.header {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.big-letters {
+  font-size: 4vh;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+@media (min-width: 600px) {
+  .big-letters {
+    font-size: 7vh;
+  }
+}
+
+.big-letters > a {
+  text-decoration: none;
+  color: grey;
+}
+
+.big-letters > a:hover {
+  text-decoration: underline;
+  color: lightgrey;
+}
+
+.big-letters > p {
+  padding: none;
+}
+
+.medium-letters {
+  font-size: 2vh;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.medium-letters > a {
+  text-decoration: none;
+  color: grey;
+}
+
+.medium-letters > a:hover {
+  text-decoration: underline;
+  color: lightgrey;
+}
+
+.medium-letters > p {
+  padding: none;
+}
+
 /* CODING LINES WEBSITE */
 
 .code-structure {
@@ -639,7 +700,7 @@ footer {
 }
 
 .code-structure body {
-  line-height: 1.5;
+  line-height: 24px;
   font-size: 1.25rem;
 }
 
@@ -666,7 +727,7 @@ footer {
 }
 
 .code-structure br {
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 @media (min-width: 600px) {
@@ -684,7 +745,7 @@ footer {
 
 .code-structure h3 {
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: normal;
   color: #231F20;
   padding-top: 0;
@@ -693,7 +754,7 @@ footer {
 
 .code-structure h4 {
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 24px;
   text-decoration: underline;
   padding-top: 0;
   padding-bottom: 0;
@@ -808,7 +869,5 @@ footer {
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
+
 /* END typewriter effect */
-
-
-html{scroll-behavior:smooth}
