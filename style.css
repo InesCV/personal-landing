@@ -183,28 +183,14 @@ footer {
 }
 
 .scroll {
-  position: absolute;
-  top: calc(100vh - 10rem);
-  left: calc(50% - 40px);
+  list-style: none;
+  text-align: center;
+  width: 100%;
   z-index: 100;
   margin-bottom: 1rem;
-}
-
-.scroll > img {
-  width: 80px;
-  height: 80px;
-}
-
-@media (min-width: 600px) {
-  .scroll {
-    top: calc(100vh - 15rem);
-    left: calc(50% - 50px);
-  }
-
-  .scroll > img {
-    width: 100px;
-    height: 100px;
-  }
+  font-size: 4em;
+  padding-top: 1em;
+  color: black;
 }
 
 .experience {
@@ -855,29 +841,7 @@ footer {
   color: grey!important;
 }
 
-
-/* START typewriter effect */
-.typewriter {
-  display: flex;
-  justify-content: left;
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+.background-black {
+  background-color: black;
+  color: white;
 }
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0% }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
-
-/* END typewriter effect */
