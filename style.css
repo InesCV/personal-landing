@@ -642,14 +642,14 @@ footer {
 }
 
 .big-letters {
-  font-size: 4vh;
+  font-size: 2em;
   font-weight: bold;
   line-height: 1em;
 }
 
 @media (min-width: 600px) {
   .big-letters {
-    font-size: 7vh;
+    font-size: 3.5em;
   }
 }
 
@@ -668,9 +668,9 @@ footer {
 }
 
 .medium-letters {
-  font-size: 2vh;
+  font-size: 1em;
   font-weight: bold;
-  line-height: 2em;
+  padding-top: 2em;
 }
 
 .medium-letters > a {
@@ -686,6 +686,16 @@ footer {
 .medium-letters > p {
   padding: none;
 }
+
+@media (min-width: 600px) {
+  .big-letters {
+    font-size: 3.5em;
+  }
+  .medium-letters {
+    font-size: 1.5em;
+  }
+}
+
 
 /* CODING LINES WEBSITE */
 
