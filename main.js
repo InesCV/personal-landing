@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded',function(event){
 });
 /* END Typerwriter effect on header */
 
+/* START Create dynamic list of numbers */
 function createNumbers() {
   // Get dynamic number of lines for the coding content
   var codeContent = document.getElementById('coding-content');
@@ -50,7 +51,7 @@ function createNumbers() {
   let extraHeight = 24;
   const screenWidth = screen.width;
   if (screenWidth < 500) {
-    extraHeight = 240; 
+    extraHeight = 24 * 17; 
   }
   var divHeight = codeContent.offsetHeight + extraHeight;
   var lineHeight = 24;
@@ -68,3 +69,29 @@ function createNumbers() {
   // 3. Add dynamic block into website
   codeLines.appendChild(textBlock);
 }
+/* END Create dynamic list of numbers */
+
+
+/* START Knowledge list animation */
+// Create the observer
+const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      for (let i = 0; i < 12; i++) {
+        let item_id = 'item-' + [i+1];
+        let delay = 'delay-' + [i+1];
+        item_id = document.getElementById(item_id);
+        item_id.classList.add(delay);
+      }
+      entry.target.classList.add('knowledge-animate');
+      knowledgeList = document.getElementById('knowledge-list-2');
+      knowledgeList.classList.add('knowledge-animate');
+    }
+  });
+});
+
+observer.observe(document.getElementById('knowledge-list'));
+/* END Knowledge list animation */
