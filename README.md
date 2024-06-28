@@ -14,5 +14,5 @@ Here you can find all the relevant information about myself and some extra data 
 URls for the project: repository and deploy
 
 [Repository Link](https://github.com/InesCV/personal-landing)
-[Deploy Link](https://inescv.github.io/personal-landing/)
+[Website Link](https://inescv.github.io/personal-landing/)
 
